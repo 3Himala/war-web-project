@@ -14,7 +14,7 @@ pipeline {
         }
         stage('continous deploy') {
             steps {
-                sh 'scp target/wwp-1.0.0.war himala@172.17.0.2:/opt/apache-tomcat-9.0.56/webapps'
+                sh 'sshpass -p "himala" scp target/wwp-1.0.0.war himala@172.17.0.2:/opt/apache-tomcat-9.0.56/webapps'
             }
         }
     }
