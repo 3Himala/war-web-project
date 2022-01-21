@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('continous download') {
+        stage('continous downloads') {
             steps {
                 git 'https://github.com/koddas/war-web-project.git'
             }
