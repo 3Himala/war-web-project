@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('continous startergy') {
+        stage('continous physics') {
             steps {
                 git 'https://github.com/koddas/war-web-project.git'
             }
